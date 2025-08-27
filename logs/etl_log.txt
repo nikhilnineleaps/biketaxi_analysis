@@ -1,0 +1,547 @@
+[2025-08-26 18:54:08] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 18:54:09] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 18:54:28] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 18:54:28] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 18:54:29] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 18:54:29] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 18:54:49] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 18:54:49] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 18:57:24] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 18:57:24] INFO - 🔄 Starting Extraction from Google Sheets...
+[2025-08-26 18:57:38] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-26 18:57:52] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-26 18:58:04] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-26 18:58:17] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-26 18:58:28] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-26 18:58:28] INFO - 🔄 Loading CSVs into Bronze schema 'bronze'...
+[2025-08-26 18:58:28] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-26 18:58:28] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-26 18:58:28] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-26 18:58:28] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-26 18:58:28] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-26 18:58:29] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-26 18:58:29] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-26 18:58:32] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-26 18:58:34] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-26 18:58:35] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-26 18:58:35] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 19:01:26] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 19:01:26] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 19:01:39] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-26 19:01:50] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-26 19:02:01] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-26 19:02:12] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-26 19:02:24] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-26 19:02:24] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-26 19:02:24] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-26 19:02:24] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-26 19:02:24] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-26 19:02:24] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-26 19:02:25] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-26 19:02:25] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-26 19:02:27] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-26 19:02:30] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-26 19:02:31] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-26 19:02:31] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 19:02:31] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-26 19:02:46] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-26 19:02:46] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 19:04:42] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 19:04:42] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 19:04:55] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-26 19:05:06] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-26 19:05:17] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-26 19:05:29] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-26 19:05:41] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-26 19:05:41] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-26 19:05:41] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-26 19:05:41] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-26 19:05:41] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-26 19:05:41] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-26 19:05:42] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-26 19:05:42] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-26 19:05:45] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-26 19:05:47] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-26 19:05:48] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-26 19:05:48] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 19:05:48] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-26 19:06:03] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-26 19:06:03] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 19:23:59] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 19:23:59] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 19:24:16] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-26 19:24:28] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-26 19:24:39] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-26 19:24:52] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-26 19:25:04] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-26 19:25:04] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-26 19:25:04] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-26 19:25:04] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-26 19:25:04] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-26 19:25:04] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-26 19:25:05] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-26 19:25:05] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-26 19:25:07] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-26 19:25:10] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-26 19:25:11] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-26 19:25:11] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 19:25:11] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-26 19:25:24] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-26 19:25:24] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 19:31:31] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 19:31:31] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 19:31:48] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-26 19:31:48] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-26 19:31:48] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-26 19:31:48] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-26 19:31:48] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-26 19:31:48] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-26 19:31:48] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-26 19:31:48] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-26 19:31:48] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-26 19:31:48] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-26 19:31:48] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-26 19:31:49] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-26 19:31:51] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-26 19:31:54] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-26 19:31:55] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-26 19:31:55] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 19:31:55] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-26 19:32:08] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-26 19:32:08] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-26 20:37:55] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 20:37:55] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 20:38:06] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 20:38:06] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 20:38:14] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 20:38:14] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 20:38:28] INFO - 🚀 ETL Pipeline Started
+[2025-08-26 20:38:28] INFO - 🔄 Running Extraction + Bronze Load...
+[2025-08-26 20:38:40] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-26 20:38:40] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-26 20:38:40] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-26 20:38:40] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-26 20:38:40] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-26 20:38:40] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-26 20:38:40] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-26 20:38:40] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-26 20:38:40] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-26 20:38:40] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-26 20:38:40] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-26 20:38:40] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-26 20:38:43] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-26 20:38:45] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-26 20:38:47] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-26 20:38:47] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-26 20:38:47] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-26 20:39:00] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-26 20:39:00] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-27 11:20:10] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 11:20:10] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 11:20:26] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-27 11:20:26] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-27 11:20:26] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-27 11:20:26] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-27 11:20:26] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-27 11:20:26] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 11:20:26] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 11:20:26] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 11:20:26] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 11:20:26] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 11:20:26] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 11:20:27] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 11:20:29] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 11:20:32] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 11:20:33] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 11:20:33] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 11:20:33] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 11:20:46] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 11:20:46] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 11:20:46] ERROR - ❌ ETL Pipeline Failed: No module named 'users_aggregate'
+[2025-08-27 11:20:46] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 65, in run_etl
+    user_aggregate = importlib.import_module("users_aggregate")
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'users_aggregate'
+
+[2025-08-27 11:23:04] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 11:23:04] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 11:23:18] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-27 11:23:18] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-27 11:23:18] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-27 11:23:18] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-27 11:23:18] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-27 11:23:18] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 11:23:18] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 11:23:18] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 11:23:18] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 11:23:18] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 11:23:18] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 11:23:18] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 11:23:21] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 11:23:23] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 11:23:25] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 11:23:25] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 11:23:25] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 11:23:38] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 11:23:38] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 11:23:39] ERROR - ❌ Failed user aggregate: Cannot save file into a non-existent directory: 'reports'
+[2025-08-27 11:23:39] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 70, in run_etl
+    user_aggregate.reconcile_silver_gold()
+  File "/home/nineleaps/PycharmProjects/capstoneproject/load_data/users_aggregate.py", line 199, in reconcile_silver_gold
+    report.to_csv(report_file, index=False)
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'reports'
+
+[2025-08-27 11:23:39] ERROR - ❌ Failed captain aggregate: Cannot save file into a non-existent directory: 'reports'
+[2025-08-27 11:23:39] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 78, in run_etl
+    captain_aggregate.reconcile_captain_aggregates()
+  File "/home/nineleaps/PycharmProjects/capstoneproject/load_data/captain_aggregate.py", line 180, in reconcile_captain_aggregates
+    report.to_csv(report_file, index=False)
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/nineleaps/PycharmProjects/capstoneproject/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'reports'
+
+[2025-08-27 11:23:39] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-27 11:35:08] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 11:35:08] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 11:35:24] ERROR - ❌ Failed to export sheets: local variable 'os' referenced before assignment
+[2025-08-27 11:35:24] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 26, in run_etl
+    log_message(f"✅ Sheet '{sheet_name}' exported to CSV: {os.path.join(extraction.CSV_DIR, csv_file)}")
+UnboundLocalError: local variable 'os' referenced before assignment
+
+[2025-08-27 11:35:24] ERROR - ❌ ETL Pipeline Failed: local variable 'sys' referenced before assignment
+[2025-08-27 11:35:24] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 26, in run_etl
+    log_message(f"✅ Sheet '{sheet_name}' exported to CSV: {os.path.join(extraction.CSV_DIR, csv_file)}")
+UnboundLocalError: local variable 'os' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 30, in run_etl
+    sys.exit(1)
+UnboundLocalError: local variable 'sys' referenced before assignment
+
+[2025-08-27 11:36:36] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 11:36:36] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 11:36:48] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-27 11:36:48] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-27 11:36:48] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-27 11:36:48] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-27 11:36:48] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-27 11:36:48] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 11:36:48] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 11:36:48] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 11:36:48] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 11:36:48] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 11:36:48] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 11:36:48] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 11:36:51] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 11:36:53] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 11:36:55] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 11:36:55] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 11:36:55] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 11:37:08] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 11:37:08] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 11:37:08] ERROR - ❌ ETL Pipeline Failed: No module named 'users_aggregate'
+[2025-08-27 11:37:08] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/etl.py", line 71, in run_etl
+    user_aggregate = importlib.import_module("users_aggregate")
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'users_aggregate'
+
+[2025-08-27 11:42:18] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 11:42:18] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 11:42:33] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-27 11:42:33] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-27 11:42:33] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-27 11:42:33] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-27 11:42:33] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-27 11:42:33] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 11:42:33] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 11:42:33] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 11:42:33] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 11:42:33] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 11:42:33] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 11:42:34] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 11:42:36] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 11:42:39] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 11:42:40] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 11:42:40] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 11:42:40] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 11:42:53] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 11:42:53] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 11:42:54] INFO - ✅ gold.user_aggregate created + reconciled
+[2025-08-27 11:42:54] INFO - ✅ gold.captain_aggregate created + reconciled
+[2025-08-27 11:42:54] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-27 12:14:16] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 12:14:16] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 12:14:32] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-27 12:14:32] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-27 12:14:32] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-27 12:14:32] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-27 12:14:32] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-27 12:14:32] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 12:14:32] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 12:14:32] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 12:14:32] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 12:14:32] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 12:14:32] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 12:14:32] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 12:14:35] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 12:14:38] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 12:14:39] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 12:14:39] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 12:14:39] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 12:14:52] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 12:14:52] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 12:14:53] INFO - ✅ Merged reconciliation report saved as ./reports/merged_reconciliation_report.csv
+[2025-08-27 12:14:53] INFO - 🎉 ETL Pipeline Finished Successfully
+[2025-08-27 12:20:20] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 12:20:20] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 12:20:34] INFO - ✅ Sheet 'users' exported to CSV: bronze_inputs/users.csv
+[2025-08-27 12:20:34] INFO - ✅ Sheet 'captains' exported to CSV: bronze_inputs/captains.csv
+[2025-08-27 12:20:34] INFO - ✅ Sheet 'rides' exported to CSV: bronze_inputs/rides.csv
+[2025-08-27 12:20:34] INFO - ✅ Sheet 'payments' exported to CSV: bronze_inputs/payments.csv
+[2025-08-27 12:20:34] INFO - ✅ Sheet 'feedback' exported to CSV: bronze_inputs/feedback.csv
+[2025-08-27 12:20:34] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 12:20:34] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 12:20:34] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 12:20:34] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 12:20:34] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 12:20:35] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 12:20:35] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 12:20:38] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 12:20:40] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 12:20:41] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 12:20:41] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 12:20:41] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 12:20:55] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 12:20:55] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 12:20:56] INFO - ✅ Merged reconciliation report saved as ./reconciliation_report.csv
+[2025-08-27 12:20:56] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 16:12:48] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 16:12:48] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 16:13:08] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 16:13:08] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 16:13:08] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 16:13:08] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 16:13:08] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 16:13:08] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 16:13:08] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 16:13:08] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 16:13:08] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 16:13:08] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 16:13:08] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 16:13:08] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 16:13:11] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 16:13:14] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 16:13:16] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 16:13:16] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 16:13:16] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 16:13:31] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 16:13:31] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 16:13:32] INFO - ✅ Merged reconciliation report saved as ../reconciliation_report.csv
+[2025-08-27 16:13:32] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 16:15:44] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 16:15:44] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 16:15:57] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 16:15:57] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 16:15:57] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 16:15:57] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 16:15:57] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 16:15:57] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 16:15:57] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 16:15:57] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 16:15:57] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 16:15:57] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 16:15:57] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 16:15:57] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 16:16:01] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 16:16:03] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 16:16:05] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 16:16:05] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 16:16:05] INFO - 🔄 Running Transform + Silver/Audit Load...
+[2025-08-27 16:16:20] INFO - ✅ Transform + Silver/Audit Load Completed Successfully
+[2025-08-27 16:16:20] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 16:16:22] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 16:16:22] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 16:25:55] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 16:25:55] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 16:26:15] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 16:26:15] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 16:26:15] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 16:26:15] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 16:26:15] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 16:26:15] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 16:26:15] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 16:26:15] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 16:26:15] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 16:26:15] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 16:26:16] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 16:26:16] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 16:26:19] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 16:26:23] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 16:26:24] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 16:26:24] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 16:26:24] INFO - 🔄 Running transform + Silver/Audit Load...
+[2025-08-27 16:26:39] INFO - ✅ transform + Silver/Audit Load Completed Successfully
+[2025-08-27 16:26:39] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 16:26:41] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 16:26:41] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 16:28:38] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 16:28:38] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 16:28:51] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 16:28:51] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 16:28:51] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 16:28:51] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 16:28:51] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 16:28:51] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 16:28:51] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 16:28:51] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 16:28:51] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 16:28:51] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 16:28:51] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 16:28:51] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 16:28:55] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 16:28:58] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 16:28:59] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 16:28:59] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 16:28:59] INFO - 🔄 Running transform + Silver/Audit Load...
+[2025-08-27 16:29:14] INFO - ✅ transform + Silver/Audit Load Completed Successfully
+[2025-08-27 16:29:14] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 16:29:16] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 16:29:16] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 17:28:29] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 17:28:29] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 17:28:43] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 17:28:43] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 17:28:43] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 17:28:43] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 17:28:43] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 17:28:43] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 17:28:43] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 17:28:43] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 17:28:43] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 17:28:43] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 17:28:44] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 17:28:44] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 17:28:47] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 17:28:49] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 17:28:51] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 17:28:51] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 17:28:51] INFO - 🔄 Running transform + Silver/Audit Load...
+[2025-08-27 17:29:05] INFO - ✅ transform + Silver/Audit Load Completed Successfully
+[2025-08-27 17:29:05] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 17:29:06] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 17:29:06] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 17:35:41] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 17:35:41] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 17:35:58] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 17:35:58] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 17:35:58] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 17:35:58] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 17:35:58] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 17:35:58] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 17:35:58] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 17:35:58] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 17:35:58] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 17:35:58] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 17:35:59] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 17:35:59] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 17:36:03] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 17:36:06] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 17:36:08] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 17:36:08] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 17:36:08] INFO - 🔄 Running transform + Silver/Audit Load...
+[2025-08-27 17:36:25] INFO - ✅ transform + Silver/Audit Load Completed Successfully
+[2025-08-27 17:36:25] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 17:36:26] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 17:36:26] ERROR - ❌ Failed to push gold aggregates to Google Sheets: module 'push_gold_to_sheets' has no attribute 'push_gold_aggregates_to_sheets'
+[2025-08-27 17:36:26] ERROR - Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/capstoneproject/src/etl.py", line 88, in run_etl
+    push_to_sheets.push_gold_aggregates_to_sheets()
+AttributeError: module 'push_gold_to_sheets' has no attribute 'push_gold_aggregates_to_sheets'
+
+[2025-08-27 17:36:26] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 17:41:52] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 17:41:52] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 17:42:08] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 17:42:08] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 17:42:08] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 17:42:08] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 17:42:08] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 17:42:08] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 17:42:08] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 17:42:08] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 17:42:08] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 17:42:08] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 17:42:09] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 17:42:09] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 17:42:12] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 17:42:14] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 17:42:16] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 17:42:16] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 17:42:16] INFO - 🔄 Running transform + Silver/Audit Load...
+[2025-08-27 17:42:29] INFO - ✅ transform + Silver/Audit Load Completed Successfully
+[2025-08-27 17:42:29] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 17:42:31] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 17:42:42] INFO - ✅ Gold aggregates pushed to Google Sheets successfully.
+[2025-08-27 17:42:42] INFO - ✅ ETL Pipeline Finished Successfully
+[2025-08-27 18:23:26] INFO - 🚀 ETL Pipeline Started
+[2025-08-27 18:23:26] INFO - 🔄 Running Extraction + Bronze Dataset Load...
+[2025-08-27 18:23:40] INFO - ✅ Sheet 'users' exported to CSV: ../bronze_inputs/users.csv
+[2025-08-27 18:23:40] INFO - ✅ Sheet 'captains' exported to CSV: ../bronze_inputs/captains.csv
+[2025-08-27 18:23:40] INFO - ✅ Sheet 'rides' exported to CSV: ../bronze_inputs/rides.csv
+[2025-08-27 18:23:40] INFO - ✅ Sheet 'payments' exported to CSV: ../bronze_inputs/payments.csv
+[2025-08-27 18:23:40] INFO - ✅ Sheet 'feedback' exported to CSV: ../bronze_inputs/feedback.csv
+[2025-08-27 18:23:40] INFO - ✅ Table 'users' created or exists in schema 'bronze'
+[2025-08-27 18:23:40] INFO - ✅ Table 'captains' created or exists in schema 'bronze'
+[2025-08-27 18:23:40] INFO - ✅ Table 'rides' created or exists in schema 'bronze'
+[2025-08-27 18:23:40] INFO - ✅ Table 'payments' created or exists in schema 'bronze'
+[2025-08-27 18:23:40] INFO - ✅ Table 'feedback' created or exists in schema 'bronze'
+[2025-08-27 18:23:40] INFO - ✅ CSV 'users.csv' loaded into table 'users'
+[2025-08-27 18:23:40] INFO - ✅ CSV 'captains.csv' loaded into table 'captains'
+[2025-08-27 18:23:43] INFO - ✅ CSV 'rides.csv' loaded into table 'rides'
+[2025-08-27 18:23:46] INFO - ✅ CSV 'payments.csv' loaded into table 'payments'
+[2025-08-27 18:23:47] INFO - ✅ CSV 'feedback.csv' loaded into table 'feedback'
+[2025-08-27 18:23:47] INFO - ✅ Extraction + Bronze Load Completed Successfully
+[2025-08-27 18:23:47] INFO - 🔄 Running transform + Silver/Audit Load...
+[2025-08-27 18:24:01] INFO - ✅ transform + Silver/Audit Load Completed Successfully
+[2025-08-27 18:24:01] INFO - 🔄 Running Gold Aggregates for Users and Captains...
+[2025-08-27 18:24:02] INFO - ✅ Merged reconciliation report saved as ../test/reconciliation_report.csv
+[2025-08-27 18:24:15] INFO - ✅ Gold aggregates pushed to Google Sheets successfully.
+[2025-08-27 18:24:15] INFO - ✅ ETL Pipeline Finished Successfully

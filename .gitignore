@@ -1,0 +1,6 @@
+# Ignore environment variable files
+.env
+# Ignore secrets
+
+config/credentials.json
+/home/nineleaps/PycharmProjects/capstoneproject/config/credentials.json
