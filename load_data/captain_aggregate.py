@@ -2,6 +2,19 @@ import os
 import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
+from datetime import datetime
+
+# ------------------------
+# Centralized logging setup
+# ------------------------
+LOG_FILE = os.path.join(os.path.dirname(__file__), '../logs/etl_log.txt')
+
+def log_message(message, level="INFO"):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_line = f"[{timestamp}] {level} - {message}"
+    print(log_line)  # Optional: still print to console
+    with open(LOG_FILE, "a") as f:
+        f.write(log_line + "\n")
 
 # -----------------------
 # Load environment variables
@@ -29,6 +42,7 @@ WITH captain_feedback AS (
            MODE() WITHIN GROUP (ORDER BY f.comments) AS most_frequent_comment
     FROM silver.rides r
     LEFT JOIN silver.feedback f ON r.ride_id = f.ride_id
+    WHERE lower(r.ride_status) != 'cancelled'
     GROUP BY r.captain_id
 ),
 captain_payment AS (
@@ -36,6 +50,7 @@ captain_payment AS (
            SUM(COALESCE(p.final_amount, 0)) AS total_final_amount
     FROM silver.rides r
     LEFT JOIN silver.payments p ON r.ride_id = p.ride_id
+    WHERE lower(r.ride_status) != 'cancelled'
     GROUP BY r.captain_id
 )
 SELECT
@@ -57,7 +72,7 @@ SELECT
     cf.most_frequent_issue,
     cf.most_frequent_comment
 FROM silver.captains c
-LEFT JOIN silver.rides r ON c.captain_id = r.captain_id
+LEFT JOIN silver.rides r ON c.captain_id = r.captain_id AND lower(r.ride_status) != 'cancelled'
 LEFT JOIN captain_payment cp ON c.captain_id = cp.captain_id
 LEFT JOIN captain_feedback cf ON c.captain_id = cf.captain_id
 GROUP BY c.captain_id, c.name, c.age, c.city, c.rating,
@@ -66,19 +81,16 @@ GROUP BY c.captain_id, c.name, c.age, c.city, c.rating,
 """
 
 # -----------------------
-# Function to create or replace the gold captain aggregate table
+# Reconciliation function
 # -----------------------
 def create_or_replace_captain_aggregate():
-    print("Creating or replacing gold.captain_aggregate table...")
+    log_message("Creating or replacing gold.captain_aggregate table...")
     with engine.begin() as conn:
         conn.execute(text(CAPTAIN_AGGREGATE_SQL))
-    print("✅ gold.captain_aggregate table created/updated successfully.")
+    log_message("gold.captain_aggregate table created/updated successfully.")
 
-# -----------------------
-# Reconciliation function (returns DataFrame, no CSV saved)
-# -----------------------
 def reconcile_captain_aggregates():
-    print("Starting captain reconciliation...")
+    log_message("Starting captain reconciliation...")
 
     silver_query = """
     WITH
@@ -87,6 +99,7 @@ def reconcile_captain_aggregates():
                COUNT(r.ride_id) AS total_rides
         FROM silver.captains c
         LEFT JOIN silver.rides r ON c.captain_id = r.captain_id
+        WHERE lower(r.ride_status) != 'cancelled'
         GROUP BY c.captain_id
     ),
     payment_sums AS (
@@ -94,6 +107,7 @@ def reconcile_captain_aggregates():
                SUM(COALESCE(p.final_amount, 0)) AS total_final_amount
         FROM silver.rides r
         LEFT JOIN silver.payments p ON r.ride_id = p.ride_id
+        WHERE lower(r.ride_status) != 'cancelled'
         GROUP BY r.captain_id
     ),
     ride_status_counts AS (
@@ -109,6 +123,7 @@ def reconcile_captain_aggregates():
                SUM(COALESCE(r.distance_km, 0)) AS total_distance_km,
                SUM(COALESCE(r.duration_min, 0)) AS total_duration_min
         FROM silver.rides r
+        WHERE lower(r.ride_status) != 'cancelled'
         GROUP BY r.captain_id
     ),
     user_ratings AS (
@@ -122,7 +137,6 @@ def reconcile_captain_aggregates():
         COUNT(DISTINCT c.captain_id) AS total_captains,
         COALESCE(SUM(rc.total_rides), 0) AS total_rides_sum,
         COALESCE(SUM(rsc.completed_rides), 0) AS completed_rides_sum,
-        COALESCE(SUM(rsc.cancelled_rides), 0) AS cancelled_rides_sum,
         COALESCE(SUM(dd.total_distance_km), 0) AS total_distance_km_sum,
         COALESCE(SUM(dd.total_duration_min), 0) AS total_duration_min_sum,
         COALESCE(SUM(ps.total_final_amount), 0) AS total_final_amount_sum,
@@ -154,7 +168,6 @@ def reconcile_captain_aggregates():
         'total_captains',
         'total_rides_sum',
         'completed_rides_sum',
-        'cancelled_rides_sum',
         'total_distance_km_sum',
         'total_duration_min_sum',
         'total_final_amount_sum',
@@ -172,7 +185,7 @@ def reconcile_captain_aggregates():
         "Status": statuses
     })
 
-    print("✅ Captain reconciliation completed (returning DataFrame).")
+    log_message("Captain reconciliation completed (returning DataFrame).")
     return report
 
 # -----------------------
@@ -181,4 +194,4 @@ def reconcile_captain_aggregates():
 if __name__ == "__main__":
     create_or_replace_captain_aggregate()
     df = reconcile_captain_aggregates()
-    print(df)
+    log_message("\n" + df.to_string(index=False))

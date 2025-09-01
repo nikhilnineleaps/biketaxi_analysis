@@ -48,6 +48,15 @@ def clean_feedback_data(bronze_file_path, valid_ride_ids):
         df_rejects = safe_concat(df_rejects, rejected)
     df_clean = df_clean[~invalid_ride_mask].copy()
 
+    # ✅ Reject multiple feedback_id for the same ride_id (keep only first one)
+    dup_mask = df_clean.duplicated(subset=['ride_id'], keep='first')
+    if dup_mask.any():
+        rejected = df_clean[dup_mask].copy()
+        rejected['reason'] = 'duplicate_feedback_for_same_ride'
+        rejected['run_ts'] = datetime.now()
+        df_rejects = safe_concat(df_rejects, rejected)
+    df_clean = df_clean[~dup_mask].copy()
+
     # Fill user_rating, captain_rating missing/invalid with median
     for col in ['user_rating', 'captain_rating']:
         df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
