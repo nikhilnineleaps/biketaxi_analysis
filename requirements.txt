@@ -1,0 +1,51 @@
+# Core Data Processing
+pandas==1.5.3
+numpy==1.24.3
+
+# Database Connection
+sqlalchemy==2.0.10
+psycopg2-binary==2.9.6
+
+# Google Sheets Integration
+google-api-python-client==2.88.0
+google-auth==2.17.3
+google-auth-oauthlib==1.0.0
+google-auth-httplib2==0.1.0
+
+# Environment Management
+python-dotenv==1.0.0
+
+# Date/Time Processing
+python-dateutil==2.8.2
+
+# HTTP Requests (if needed for API calls)
+requests==2.31.0
+
+# Data Validation & Quality (optional but recommended)
+great-expectations==0.16.13
+pydantic==1.10.7
+
+# Logging & Monitoring (optional enhancement)
+structlog==23.1.0
+
+# Testing (development)
+pytest==7.3.1
+pytest-cov==4.1.0
+
+# Code Quality (development)
+black==23.3.0
+flake8==6.0.0
+isort==5.12.0
+
+# Development Tools
+jupyter==1.0.0
+ipython==8.13.2
+
+# Progress Bars (for ETL monitoring)
+tqdm==4.65.0
+
+# Security (for better secrets management)
+cryptography==41.0.1
+
+# Excel support (if needed)
+openpyxl==3.1.2
